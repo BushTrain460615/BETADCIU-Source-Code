@@ -20,13 +20,13 @@ bf-exgf
 miku
 hex
 pico
-nene
+nene2
 whitty
 agoti
 kapi
 liz
 bf-sky
-hd-senpai
-hd-senpaiangry
+hd-senpai-giddy
+hd-senpai-angry
 tankman
 hd-spirit

@@ -1,6 +1,6 @@
 function start (song)
 	print("Song: " .. song .. " @ " .. bpm .. " downscroll: " .. downscroll)
-    setActorAlpha(0, 'gfCrazyBG')
+    setActorAlpha(0, 'gfCrazyBG', true)
 end
 
 local defaultHudX = 0
@@ -28,7 +28,7 @@ function beatHit (beat)
     end
 
     if curBeat == 64 then
-        changeDadCharacter('nene', 50, 225)
+        changeDadCharacter('nene2', 50, 255)
     end
 
     if curBeat == 74 then
@@ -69,7 +69,7 @@ function beatHit (beat)
     end
 
     if curBeat == 168 then
-        setActorAlpha(1, 'gfCrazyBG')
+        setActorAlpha(1, 'gfCrazyBG', true)
         characterZoom('dad', 1)
         changeDadCharacter('mom', 120, -100)
     end
@@ -132,7 +132,7 @@ function beatHit (beat)
     end
 
     if curBeat == 376 then
-        -- trail shit didn't work so I had to hardcode it in along with tabi
+        changeDadCharacter('tabi-crazy', 120, -25);
     end
 
     if curBeat == 392 then

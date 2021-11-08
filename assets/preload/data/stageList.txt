@@ -6,4 +6,7 @@ mall
 mallEvil
 school
 tank
-throne
+churchselever
+facility
+eddhouse-bot
+genocide

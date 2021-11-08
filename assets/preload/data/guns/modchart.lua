@@ -18,6 +18,10 @@ end
 
 function beatHit (beat)
 
+    if curBeat == 1 then
+        changeDadCharacter('sarvente', -55, 75)
+    end
+    
     if curBeat == 64 then
         changeDadCharacter('dad', 20, 100)
     end
@@ -31,7 +35,7 @@ function beatHit (beat)
     end
 
     if curBeat == 104 then
-        changeBoyfriendCharacter('hd-senpaiangry', 810, 100)
+        changeBoyfriendCharacter('hd-senpai-angry', 810, 100)
         followBFXOffset = -50
         followBFYOffset = 50
     end
