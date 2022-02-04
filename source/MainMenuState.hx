@@ -14,7 +14,7 @@ import flixel.util.FlxColor;
 import io.newgrounds.NG;
 import lime.app.Application;
 
-#if desktop
+#if windows
 import Discord.DiscordClient;
 #end
 
