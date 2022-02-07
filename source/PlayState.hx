@@ -60,12 +60,10 @@ import openfl.filters.BitmapFilter;
 #if windows
 import Discord.DiscordClient;
 #end
+
 #if sys
 import Sys;
 import sys.FileSystem;
-#end
-
-#if sys
 import lime.media.AudioBuffer;
 import flash.media.Sound;
 #end
