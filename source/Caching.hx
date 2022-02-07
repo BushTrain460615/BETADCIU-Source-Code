@@ -10,8 +10,10 @@ import flixel.ui.FlxBar;
 import haxe.Exception;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+#if sys
 import sys.FileSystem;
 import sys.io.File;
+#end
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileDiamond;
