@@ -38,7 +38,7 @@ class MainMenuState extends MusicBeatState
 	var menuItem:FlxSprite;
 	public static var mainMusic = true;
 
-	public static var kadeEngineVer:String = "Kade Engine";
+	public static var kadeEngineVer:String = "Kade Engine:";
 	public static var gameVer:String = "0.2.7.1";
 	public static var betadciuVer:String = "Update 11.5";
 
@@ -52,10 +52,6 @@ class MainMenuState extends MusicBeatState
 		secretMenu = 0;
 		activated = false;
 		
-		#if desktop
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
-		#end
 		
 		if (!FlxG.sound.music.playing || !mainMusic)
 		{
