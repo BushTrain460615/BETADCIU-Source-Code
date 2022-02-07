@@ -14,10 +14,12 @@ import openfl.geom.Matrix;
 import openfl.display.BitmapData;
 import lime.app.Application;
 import flixel.FlxSprite;
+#if LUA_ALLOWED
 import llua.Convert;
 import llua.Lua;
 import llua.State;
 import llua.LuaL;
+#end
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
