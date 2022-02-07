@@ -36,7 +36,7 @@ import openfl.media.Sound;
 import openfl.net.FileReference;
 import openfl.utils.ByteArray;
 
-#if windows
+#if sys
 import Sys;
 import sys.FileSystem;
 #end
