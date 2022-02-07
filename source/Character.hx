@@ -8,7 +8,7 @@ import flixel.util.FlxColor;
 import lime.app.Application;
 import flash.display.BitmapData;
 
-#if windows
+#if sys
 import Sys;
 import sys.FileSystem;
 import sys.io.File;
