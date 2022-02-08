@@ -5,19 +5,7 @@ import Sys.sleep;
 using StringTools;
 
 class DiscordClient
-{
-	public function new()
-	{
-		});
-		trace("Discord Client started.");
-
-		while (true)
-		{
-			sleep(2);
-			//trace("Discord Client Update");
-		}
-	}
-	
+{	
 	public static function shutdown()
 	{
 	}
