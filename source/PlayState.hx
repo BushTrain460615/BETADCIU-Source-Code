@@ -3529,23 +3529,6 @@ class PlayState extends MusicBeatState
 		return returnVal;
 	}
 
-	function changeDadCharacter(x:Float, y:Float, character:String)
-	{
-		dad.destroy();
-		dad = new Character(x, y, character);
-		add(dad);
-		iconP2.useOldSystem(character);
-
-		if (defaultBar)
-		{
-			healthBar.createFilledBar(FlxColor.fromString('#' + dad.iconColor), FlxColor.fromString('#' + boyfriend.iconColor));
-			healthBar.updateBar();
-		}
-	
-		if (changeArrows)
-			updateStaticNotes(dad.noteSkin);
-	}
-
 	function changeGFCharacter(x:Float, y:Float, character:String)
 	{
 		gf.destroy();
@@ -4860,8 +4843,6 @@ class PlayState extends MusicBeatState
 						//this one actually works
 						if (FileSystem.exists(Paths.txt(songLowercase  + "/arrowSwitches" + suf)))
 						{
-							var stuff:Array<String> = CoolUtil.coolTextFile2(Paths.txt(songLowercase  + "/arrowSwitches" + suf));
-				
 							for (i in 0...stuff.length)
 							{
 								var data:Array<String> = stuff[i].split(' ');
@@ -4888,8 +4869,6 @@ class PlayState extends MusicBeatState
 					case "rabbit's-luck":
 						if (FileSystem.exists(Paths.txt(songLowercase  + "/arrowSwitches" + suf)))
 						{
-							var stuff:Array<String> = CoolUtil.coolTextFile2(Paths.txt(songLowercase  + "/arrowSwitches" + suf));
-				
 							for (i in 0...stuff.length)
 							{
 								var data:Array<String> = stuff[i].split(' ');
@@ -4910,8 +4889,6 @@ class PlayState extends MusicBeatState
 			{
 				if (FileSystem.exists(Paths.txt(songLowercase  + "/arrowSwitches" + suf)))
 				{
-					var stuff:Array<String> = CoolUtil.coolTextFile2(Paths.txt(songLowercase  + "/arrowSwitches" + suf));
-		
 					for (i in 0...stuff.length)
 					{
 						var data:Array<String> = stuff[i].split(' ');
@@ -7619,7 +7596,7 @@ class PlayState extends MusicBeatState
 
 					playDad = true;
 
-					#if desktop
+					#if windows
 					if (luaModchart != null)
 					{
 						if (luaModchart.getVar("playDadSing",'bool'))
